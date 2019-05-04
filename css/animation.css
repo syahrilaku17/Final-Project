@@ -1,0 +1,97 @@
+.animated{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 3s  ;
+    visibility: visible;
+}
+.animated-1{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 3s  ;
+    animation-delay: 1s;
+    visibility: visible;
+}
+.animated-2{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 3s  ;
+    animation-delay: 2s;
+    visibility: visible;
+}
+.animated-3{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 3s  ;
+    animation-delay: 3s;
+    visibility: visible;
+}
+.animated-4{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation: mymove 3s  ;
+    animation-delay: 4s;
+    visibility: visible;
+}
+.fadeInDown{
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+}
+.ok{
+    visibility: hidden !important;
+}
+@keyframes fadeInDown{
+    0%{
+        transform: translate3d(0px,-50%,0);
+        -webkit-transform: translate3d(0px,-50%,0);
+    }
+
+    50%{
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+    }
+
+}
+.swing{
+    transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    animation-name: swing;
+    -webkit-animation-name: swing;
+    -ms-animation-name: swing;
+}
+
+@keyframes swing{
+    20%{
+        transform: rotate3d(0,0,1, 15deg);
+        -webkit-transform: rotate3d(0,0,1, 15deg);
+    }
+    40%{
+        transform: rotate3d(0,0,1, -10deg);
+        -webkit-transform: rotate3d(0,0,1, -10deg);
+    }
+    60%{
+        transform: rotate3d(0,0,1, 5deg);
+        -webkit-transform: rotate3d(0,0,1, 5deg);
+    }
+    80%{
+        transform: rotate3d(0,0,1, -5deg);
+        -webkit-transform: rotate3d(0,0,1, -5deg);
+    }
+    100%{
+        transform: rotate3d(0,0,1, 0deg);
+        -webkit-transform: rotate3d(0,0,1, 0deg);
+    }
+}
+.video{
+    background: url("video.mp4") !important;
+}
